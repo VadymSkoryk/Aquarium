@@ -28,7 +28,12 @@ public class Fish extends AquaObj {
         this.Age++;
     }
 
-    public void Eat(){}
+    public void Eat(){
+        if(this.isHungry)
+        {
+            ///find meal
+        }
+    }
     public void findPair(){}
     public void Pregnancy(){}
 
