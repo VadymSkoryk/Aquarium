@@ -5,15 +5,17 @@ import java.util.Random;
  * On 11.06.2019.
  */
 public class Grass extends AquaObj{
-    private final static int maxSize = 15;
-    private int Size;
+    private final static double maxSize = 15.0;
+    private double Size;
 
     public Grass() {
-        Size = new Random().nextInt(15);
+        Size = new Random().nextDouble();
     }
 
     @Override
     public void Growing() {
-        this.Size++;
+        if(Size<maxSize)
+            Size=Size*1.5;
+        else return;
     }
 }
