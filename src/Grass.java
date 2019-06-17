@@ -5,8 +5,8 @@ import java.util.Random;
  * On 11.06.2019.
  */
 public class Grass extends AquaObj{
-    private final static double maxSize = 15.0;
-    private double Size;
+    protected final static double maxSize = 15.0;
+    protected double Size;
 
     public Grass() {
         Size = new Random().nextDouble();
